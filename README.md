@@ -1,6 +1,6 @@
 > 需要有一台ISP没做源地址验证，支持IP Spoof的服务器。很难很难找，但是我有，但是为了防止滥用，就不公开了（doge)。如果有需要的话，那就自己慢慢交学费吧。
 >
-> 还需要shodan的API，这边提供了shodan寻找有monlist的技巧，我是用会员API KEY写的脚本，非会员的话就修改一下search.py中的search_and_save函数
+> 还需要shodan的API，这边提供了shodan寻找有monlist漏洞的ntp服务器技巧，我是用会员API KEY写的脚本，非会员的话就修改一下search.py中的search_and_save函数
 
 
 ```
