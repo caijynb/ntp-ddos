@@ -39,11 +39,11 @@ tcpdump -i eth0 udp -w 2.cap
 python3 attack.py
 ```
 
-2.cap用wireshark打开：统计—>IO图标，Y轴改成Bytes，就可以测算峰值带宽了
+2.cap用wireshark打开：统计—>I/O图表，Y轴改成Bytes，就可以测算峰值带宽了
 ![](2cap.png)
 
 
-PS：测试阿里/腾讯服务器貌似不能成功，存在 NTP 的反射防护策略。抓包了一下攻击流量，可以看到请求的ip都是内网的ip。
+PS：测试阿里/腾讯服务器貌似不能成功，存在 NTP 的反射防护策略。抓包了一下攻击流量（腾讯云服务器运行`nmap -sU -pU:123 -Pn -n --script=ntp-monlist <存在monlist漏洞的ntp服务器ip>`)，可以看到返回的ip是内网的ip。
 
 ![](txy.png)
 
